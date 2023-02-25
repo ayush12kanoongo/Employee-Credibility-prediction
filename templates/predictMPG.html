@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body style="background-color:rgba(2, 0, 36, 100)">
+<!-- {% if predictMPG %}
+<h1>The Prediction is: {{predictMPG}}</h1>
+{% endif %} -->
+{% if predictMPG == 0 %}
+<h1 style=" font-weight: 500;">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"> 
+<h1 class="" style="color:white"><center>Employee will not leave the company!</center></h1>
+
+{% elif predictMPG == 1 %}
+<h1 style="color: black; font-weight: 500;">
+<h1 class="font-effect-shadow-multiple"><center>Employee will leave the company!</center></h1>
+{% else %}
+<h1 style="color: rgb(31, 15, 15); font-weight: 500;">ERROR</h1>
+{% endif %}
+
+</body>
+</html>
